@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exam Redo</title>
+    <style>
+        body {
+            background-color: #e6f2f7;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        .role-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: white;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .role-button:hover {
+            background-color: #3b3b9d;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exam <span style="background-color:#3b3b9d; color:white; padding: 4px 8px; border-radius: 5px;">Redo</span></h1>
+    
+    <!-- Links to the respective login pages for each role -->
+    <a href="{% url 'students:login_student' %}">
+        <button class="role-button">Sign in as Student</button>
+    </a>
+    
+    <a href="{% url 'students:login_instructor' %}">
+        <button class="role-button">Sign in as Instructor</button>
+    </a>
+    
+    <a href="{% url 'students:login_secretary' %}">
+        <button class="role-button">Sign in as Secretary</button>
+    </a>
+
+</body>
+</html>

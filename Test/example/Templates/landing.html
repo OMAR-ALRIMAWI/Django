@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exam Redo</title>
+    <style>
+        body {
+            background-color: #e6f2f7;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        .badge {
+            background-color: #3b3b9d;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 5px;
+            font-size: 24px;
+        }
+        .role-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 25px;
+            background-color: white;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        .role-button:hover {
+            background-color: #dcdcdc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exam <span class="badge">Redo</span></h1>
+    <button class="role-button" onclick="window.location.href='/students/login/'">Sign as Student</button>
+    <button class="role-button" onclick="window.location.href='/instructors/login/'">Sign as Instructor</button>
+    <button class="role-button" onclick="window.location.href='/secretary/login/'">Sign as Secretary</button>
+</body>
+</html>     
