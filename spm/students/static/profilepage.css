@@ -1,0 +1,867 @@
+.profilepage-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+  }
+   
+  .profilepage-profilepage {
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(235, 247, 250, 1);
+  }
+   
+  .profilepage-online {
+    top: 1168.2760009765625px;
+    left: 1597.32080078125px;
+    width: 51.82373046875px;
+    height: 15.872037887573242px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .profilepage-list4 {
+    top: 0px;
+    left: 0px;
+    width: 51.82373046875px;
+    height: 15.872037887573242px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .profilepage-group135 {
+    top: 0px;
+    left: 0px;
+    width: 51.82373046875px;
+    height: 15.872037887573242px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .profilepage-ellipse91 {
+    top: 10.587522506713867px;
+    left: 0px;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    border-color: rgba(255, 255, 255, 1);
+    border-style: solid;
+    border-width: 1px;
+  }
+   
+  .profilepage-text10 {
+    left: 15.82373046875px;
+    color: rgba(73, 0, 87, 1);
+    width: 36px;
+    height: auto;
+    opacity: 0.60;
+    position: absolute;
+    font-size: 12px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Nunito;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .profilepage-rectangle10 {
+    top: 0px;
+    left: 0.000293731689453125px;
+    width: 1920px;
+    height: 112px;
+    position: absolute;
+  }
+   
+  .profilepage-group190 {
+    top: 23px;
+    left: 106px;
+    width: 293px;
+    height: 69px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .profilepage-group189 {
+    top: 0.9718309640884399px;
+    left: 154.3203125px;
+    width: 138.67971801757812px;
+    height: 68.02816772460938px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .profilepage-group1871 {
+    top: 0px;
+    left: 0px;
+    width: 138.67971801757812px;
+    height: 68.02816772460938px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .profilepage-rectangle2 {
+    top: 0px;
+    left: 0px;
+    width: 139px;
+    height: 68px;
+    position: absolute;
+  }
+   
+  .profilepage-rectangle2-stroke {
+    top: 0px;
+    left: 0px;
+    width: 139px;
+    height: 68px;
+    position: absolute;
+  }
+   
+  .profilepage-group188 {
+    top: 0px;
+    left: 0px;
+    width: 282.5729675292969px;
+    height: 65.11267852783203px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .profilepage-group1872 {
+    top: 0px;
+    left: 0px;
+    width: 282.5729675292969px;
+    height: 65.11267852783203px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .profilepage-text11 {
+    color: rgba(51, 61, 121, 1);
+    width: 148px;
+    height: auto;
+    position: absolute;
+    font-size: 55px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .profilepage-text12 {
+    top: 10.690140724182129px;
+    left: 164.747314453125px;
+    color: rgba(255, 255, 255, 1);
+    width: 118px;
+    height: auto;
+    position: absolute;
+    font-size: 45px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .profilepage-line1 {
+    top: 112px;
+    left: 517.0003051757812px;
+    width: 115px;
+    height: 1px;
+    position: absolute;
+  }
+   
+  .profilepage-rectangle23 {
+    top: 154px;
+    left: 64px;
+    width: 465px;
+    height: 889px;
+    position: absolute;
+    border-radius: 54px;
+  }
+   
+  .profilepage-text13 {
+    top: 540px;
+    left: 101px;
+    color: rgba(0, 0, 0, 1);
+    width: 263px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .profilepage-text14 {
+    top: 634px;
+    left: 101px;
+    color: rgba(0, 0, 0, 1);
+    width: 268px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .profilepage-line4 {
+    top: 973px;
+    left: 117px;
+    width: 356px;
+    height: 1px;
+    position: absolute;
+  }
+   
+  .profilepage-text15 {
+    top: 281px;
+    left: 101px;
+    color: rgba(0, 0, 0, 1);
+    width: 304px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .profilepage-text16 {
+    top: 361px;
+    left: 101px;
+    color: rgba(0, 0, 0, 1);
+    width: 304px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .profilepage-text17 {
+    top: 451px;
+    left: 101px;
+    color: rgba(0, 0, 0, 1);
+    width: 256px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .profilepage-text18 {
+    top: 204px;
+    left: 104px;
+    color: rgba(0, 0, 0, 1);
+    width: 125px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .profilepage-frameiconmenu {
+    top: 390.45855712890625px;
+    left: 2296.11376953125px;
+    width: 113.88566589355469px;
+    height: 67.56399536132812px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .profilepage-bell1 {
+    top: 29px;
+    left: 560.0003051757812px;
+    width: 64px;
+    height: 54px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+   
+  .profilepage-rectangle28 {
+    top: 154px;
+    left: 560px;
+    width: 1308px;
+    height: 889px;
+    position: absolute;
+    border-radius: 54px;
+  }
+   
+  .profilepage-rectangle29 {
+    top: 410px;
+    left: 1482px;
+    width: 160px;
+    height: 63px;
+    position: absolute;
+    border-radius: 54px;
+  }
+   
+  .profilepage-text19 {
+    top: 424px;
+    left: 1519px;
+    color: rgba(0, 0, 0, 1);
+    width: 85px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .profilepage-rectangle22 {
+    top: 407px;
+    left: 1654px;
+    width: 176px;
+    height: 66px;
+    position: absolute;
+    border-radius: 54px;
+  }
+   
+  .profilepage-text20 {
+    top: 415px;
+    left: 1669px;
+    color: rgba(255, 255, 255, 1);
+    width: 161px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .profilepage-text21 {
+    top: 309px;
+    left: 1077px;
+    color: rgba(51, 61, 121, 1);
+    width: 119px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .profilepage-text22 {
+    top: 309px;
+    left: 635px;
+    color: rgba(51, 61, 121, 1);
+    width: 119px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .profilepage-text23 {
+    top: 776px;
+    left: 635px;
+    color: rgba(51, 61, 121, 1);
+    width: 161px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .profilepage-line8 {
+    top: 695px;
+    left: 611px;
+    width: 505px;
+    height: 1px;
+    position: absolute;
+  }
+   
+  .profilepage-line9 {
+    top: 882.5px;
+    left: 610.9876098632812px;
+    width: 505px;
+    height: 1px;
+    position: absolute;
+  }
+   
+  .profilepage-text24 {
+    top: 837px;
+    left: 635px;
+    color: rgba(51, 61, 121, 1);
+    width: 207px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .profilepage-line7 {
+    top: 517.4970092773438px;
+    left: 610.99951171875px;
+    width: 505px;
+    height: 1px;
+    position: absolute;
+  }
+   
+  .profilepage-text25 {
+    top: 472px;
+    left: 635px;
+    color: rgba(51, 61, 121, 1);
+    width: 133px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .profilepage-text26 {
+    top: 659px;
+    left: 635px;
+    color: rgba(51, 61, 121, 1);
+    width: 408px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .profilepage-text30 {
+    top: 413px;
+    left: 635px;
+    color: rgba(51, 61, 121, 1);
+    width: 119px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .profilepage-text31 {
+    top: 599px;
+    left: 635px;
+    color: rgba(51, 61, 121, 1);
+    width: 161px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .profilepage-text32 {
+    top: 243px;
+    left: 1077px;
+    color: rgba(51, 61, 121, 1);
+    width: 119px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .profilepage-text33 {
+    top: 244px;
+    left: 635px;
+    color: rgba(51, 61, 121, 1);
+    width: 119px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .profilepage-group381 {
+    top: 231px;
+    left: 1507px;
+    width: 109px;
+    height: 114px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .profilepage-image271 {
+    top: 0px;
+    left: 0px;
+    width: 109px;
+    height: 114px;
+    position: absolute;
+    border-radius: 140px;
+  }
+   
+  .profilepage-line5 {
+    top: 345px;
+    left: 611px;
+    width: 356px;
+    height: 1px;
+    position: absolute;
+  }
+   
+  .profilepage-line6 {
+    top: 345px;
+    left: 1059px;
+    width: 352px;
+    height: 1px;
+    position: absolute;
+  }
+   
+  .profilepage-vector {
+    top: 419px;
+    left: 611px;
+    width: 17px;
+    height: 16px;
+    position: absolute;
+  }
+   
+  .profilepage-line10 {
+    top: 467.0003662109375px;
+    left: 1190.204345703125px;
+    width: 243.85108947753906px;
+    height: 53.62560272216797px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .profilepage-line21 {
+    top: 0px;
+    left: 0px;
+    width: 243px;
+    height: 1px;
+    opacity: 0.10;
+    position: absolute;
+  }
+   
+  .profilepage-line3 {
+    top: 53.625648498535156px;
+    left: 1.051025390625px;
+    width: 243px;
+    height: 1px;
+    opacity: 0.10;
+    position: absolute;
+  }
+   
+  .profilepage-location {
+    top: 548.8133544921875px;
+    left: 1195.133056640625px;
+    width: 0px;
+    height: 0px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .profilepage-message1 {
+    top: 606px;
+    left: 611px;
+    width: 16.81731605529785px;
+    height: 14.62515926361084px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .profilepage-message2 {
+    top: 0px;
+    left: 0px;
+    width: 17px;
+    height: 15px;
+    position: absolute;
+  }
+   
+  .profilepage-line11 {
+    top: 643.477294921875px;
+    left: 1190.204345703125px;
+    width: 242.8000030517578px;
+    height: 0.00002019466228375677px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .profilepage-line22 {
+    top: 0px;
+    left: 0px;
+    width: 243px;
+    height: 1px;
+    opacity: 0.10;
+    position: absolute;
+  }
+   
+  .profilepage-call1 {
+    top: 782px;
+    left: 611px;
+    width: 16.81731605529785px;
+    height: 15.600170135498047px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .profilepage-call2 {
+    top: 0px;
+    left: 0px;
+    width: 17px;
+    height: 16px;
+    position: absolute;
+  }
+   
+  .profilepage-group43 {
+    top: 13px;
+    left: 1785px;
+    width: 99px;
+    height: 93px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .profilepage-group42 {
+    top: 0px;
+    left: 0px;
+    width: 99px;
+    height: 93px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .profilepage-group41 {
+    top: 0px;
+    left: 0px;
+    width: 99px;
+    height: 93px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background-color: rgba(48, 61, 126, 1);
+  }
+   
+  .profilepage-group40 {
+    top: 16px;
+    left: 619px;
+    width: 1261px;
+    height: 87px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .profilepage-group35 {
+    top: 18px;
+    left: 0px;
+    width: 648px;
+    height: 46px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .profilepage-group28 {
+    top: 0px;
+    left: 0px;
+    width: 648px;
+    height: 46px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .profilepage-search {
+    gap: 8px;
+    top: 0px;
+    left: 0px;
+    width: 648px;
+    height: 46px;
+    display: flex;
+    padding: 12px 16px;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
+    align-items: center;
+    flex-shrink: 0;
+    border-color: rgba(48, 61, 126, 1);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 9999px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+   
+  .profilepage-text34 {
+    color: rgba(30, 30, 30, 1);
+    height: auto;
+    flex-grow: 1;
+    text-align: left;
+    line-height: 100%;
+  }
+   
+  .profilepage-x {
+    width: 16px;
+    height: 16px;
+  }
+   
+  .profilepage-bell2 {
+    top: 18px;
+    left: 705px;
+    width: 64px;
+    height: 54px;
+    position: absolute;
+  }
+   
+  .profilepage-group382 {
+    top: 0px;
+    left: 1171px;
+    width: 90px;
+    height: 87px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .profilepage-image272 {
+    top: 0px;
+    left: 0px;
+    width: 90px;
+    height: 87px;
+    position: absolute;
+    border-radius: 140px;
+  }
+  

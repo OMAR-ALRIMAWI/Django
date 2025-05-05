@@ -1,0 +1,364 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Exam Redo - Attend Resit Exam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap"
+      data-tag="font"
+    />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/attend-resit.css" />
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Additional styles -->
+    <style>
+      /* Ensure modal is hidden by default */
+      .modal-overlay.hidden {
+        display: none !important;
+      }
+      
+      /* Style for improvement eligible items (DC and DD grades) */
+      .course-item[data-course-code="SE302/2"],
+      .course-item[data-course-code="IE333/1"] {
+        background-color: rgba(255, 152, 0, 0.05);
+        border-left: 3px solid var(--warning-color);
+      }
+      
+      /* Style for failing items (FF grade) */
+      .course-item[data-course-code="PSIR452/1"] {
+        background-color: rgba(244, 67, 54, 0.05);
+        border-left: 3px solid var(--error-color);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <!-- Header Section -->
+      <header class="header">
+        <div class="container">
+          <div class="header-content">
+            <div class="header-logo">
+              <img src="{% static 'logo.svg' %}" alt="Logo" />
+            </div>
+            
+            <div class="header-actions">
+              <div class="search-box">
+                <i class="fa-solid fa-search search-icon"></i>
+                <input type="text" class="search-input" placeholder="Search..." />
+              </div>
+              
+              <a href="notifications1.html" class="header-icon">
+                <i class="fa-solid fa-bell"></i>
+              </a>
+              
+              <a href="profilepage.html" class="user-profile">
+                <img src="public/external/image271065-cowr-200h.png" alt="User profile" />
+              </a>
+              
+              <a href="exam-redo.html" class="logout-btn">Logout</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      <!-- Main Content -->
+      <main class="container">
+        <div class="main-content">
+          <!-- Sidebar -->
+          <aside class="sidebar">
+            <nav>
+              <ul class="sidebar-menu">
+                <li class="sidebar-menu-item">
+                  <a href="index.html" class="sidebar-menu-link">
+                    <i class="fa-solid fa-house"></i> Dashboard
+                  </a>
+                </li>
+                
+                <div class="sidebar-menu-title">Exam Management</div>
+                <li class="sidebar-menu-item">
+                  <a href="course-grades.html" class="sidebar-menu-link">
+                    <i class="fa-solid fa-file-alt"></i> Course Letter Grades
+                  </a>
+                </li>
+                <li class="sidebar-menu-item">
+                  <a href="attend-resit.html" class="sidebar-menu-link active">
+                    <i class="fa-solid fa-check-circle"></i> Attend Resit Exam
+                  </a>
+                </li>
+                <li class="sidebar-menu-item">
+                  <a href="resit-exam-schedule.html" class="sidebar-menu-link">
+                    <i class="fa-solid fa-calendar"></i> Resit Exam Schedule
+                  </a>
+                </li>
+                
+                <div class="sidebar-menu-title">Results</div>
+                <li class="sidebar-menu-item">
+                  <a href="resit-exam-details.html" class="sidebar-menu-link">
+                    <i class="fa-solid fa-info-circle"></i> Resit Exam Details
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+          
+          <!-- Attend Resit Content -->
+          <div class="dashboard-content">
+            <div class="content-header">
+              <h1 class="content-title">Attend Resit Exam</h1>
+              <p class="content-subtitle">Confirm which resit exams you want to attend. Registration deadline is June 10, 2023.</p>
+            </div>
+            
+            <div class="attend-container">
+              <div class="info-alert">
+                <i class="fa-solid fa-circle-info"></i>
+                <div class="alert-content">
+                  <h3 class="alert-title">Important Information</h3>
+                  <p class="alert-text">
+                    You can only confirm attendance for courses where you are eligible for a resit exam. 
+                    Eligibility requires grades of DC or lower (FF, FD, DF, DD, DC). Grades of CD and higher are considered passing grades and are not eligible for resit exams.
+                    Once confirmed, you cannot cancel your registration. Confirmation deadline is June 10, 2023 at 11:59 PM.
+                  </p>
+                </div>
+              </div>
+
+              <div class="attend-card">
+                <div class="attend-header">
+                  <h2 class="attend-title">Eligible Courses</h2>
+                  <div class="header-info">
+                    <span class="deadline">Registration Deadline: <strong>June 10, 2023</strong></span>
+                    <span class="remaining-time">7 days remaining</span>
+                  </div>
+                </div>
+                
+                <div class="courses-list">
+                  <!-- Course 1 -->
+                  <div class="course-item" data-course-code="SE302/2">
+                    <div class="course-info">
+                      <div class="course-code-name">
+                        <span class="course-code">SE302/2</span>
+                        <span class="course-name">Software Project Management</span>
+                        <span class="optional-badge" style="background-color: var(--warning-color);">Improvement Eligible</span>
+                      </div>
+                      <div class="course-details">
+                        <div class="course-grade">
+                          <span class="detail-label">Current Grade:</span>
+                          <span class="detail-value grade-c">DC</span>
+                        </div>
+                        <div class="course-date">
+                          <span class="detail-label">Exam Date:</span>
+                          <span class="detail-value">June 15, 2023 - 10:00 AM</span>
+                        </div>
+                        <div class="course-location">
+                          <span class="detail-label">Location:</span>
+                          <span class="detail-value">Room A-301</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="course-action">
+                      <button class="btn btn-primary confirm-btn" data-course="SE302/2">Confirm Attendance</button>
+                      <div class="confirmed-status hidden">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Attendance Confirmed</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Course 2 -->
+                  <div class="course-item" data-course-code="IE333/1">
+                    <div class="course-info">
+                      <div class="course-code-name">
+                        <span class="course-code">IE333/1</span>
+                        <span class="course-name">Data Science and Analytics</span>
+                        <span class="optional-badge" style="background-color: var(--warning-color);">Improvement Eligible</span>
+                      </div>
+                      <div class="course-details">
+                        <div class="course-grade">
+                          <span class="detail-label">Current Grade:</span>
+                          <span class="detail-value grade-c">DD</span>
+                        </div>
+                        <div class="course-date">
+                          <span class="detail-label">Exam Date:</span>
+                          <span class="detail-value">June 18, 2023 - 13:30 PM</span>
+                        </div>
+                        <div class="course-location">
+                          <span class="detail-label">Location:</span>
+                          <span class="detail-value">Room B-105</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="course-action">
+                      <button class="btn btn-primary confirm-btn" data-course="IE333/1">Confirm Attendance</button>
+                      <div class="confirmed-status hidden">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Attendance Confirmed</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Course 3 -->
+                  <div class="course-item" data-course-code="PSIR452/1">
+                    <div class="course-info">
+                      <div class="course-code-name">
+                        <span class="course-code">PSIR452/1</span>
+                        <span class="course-name">State Crimes and Atrocities</span>
+                        <span class="optional-badge" style="background-color: var(--error-color);">Failed</span>
+                      </div>
+                      <div class="course-details">
+                        <div class="course-grade">
+                          <span class="detail-label">Current Grade:</span>
+                          <span class="detail-value grade-f">FF</span>
+                        </div>
+                        <div class="course-date">
+                          <span class="detail-label">Exam Date:</span>
+                          <span class="detail-value">June 20, 2023 - 09:00 AM</span>
+                        </div>
+                        <div class="course-location">
+                          <span class="detail-label">Location:</span>
+                          <span class="detail-value">Room C-210</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="course-action">
+                      <button class="btn btn-primary confirm-btn" data-course="PSIR452/1">Confirm Attendance</button>
+                      <div class="confirmed-status hidden">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Attendance Confirmed</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    
+    <!-- Confirmation Modal -->
+    <div class="modal-overlay hidden" id="confirmModal" style="display: none !important;">
+      <div class="modal">
+        <div class="modal-header">
+          <h3 class="modal-title">Confirm Attendance</h3>
+          <button class="modal-close" id="closeModal">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Are you sure you want to attend the resit exam for <strong id="modalCourseName">SE302/2 Software Project Management</strong>?</p>
+          <p class="modal-warning">This action cannot be undone after confirmation.</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" id="cancelConfirmation">Cancel</button>
+          <button class="btn btn-primary" id="confirmAttendance">Confirm Attendance</button>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      // Immediate function to hide modal as soon as possible
+      (function() {
+        const modal = document.getElementById('confirmModal');
+        if (modal) {
+          modal.classList.add('hidden');
+          modal.style.display = 'none';
+        }
+      })();
+
+      document.addEventListener('DOMContentLoaded', function() {
+        // Current course being confirmed
+        let currentCourse = null;
+        
+        // Get DOM elements
+        const confirmButtons = document.querySelectorAll('.confirm-btn');
+        const modalOverlay = document.getElementById('confirmModal');
+        const modalCourseName = document.getElementById('modalCourseName');
+        const closeModalBtn = document.getElementById('closeModal');
+        const cancelBtn = document.getElementById('cancelConfirmation');
+        const confirmBtn = document.getElementById('confirmAttendance');
+        
+        // Make sure modal is hidden on page load
+        modalOverlay.classList.add('hidden');
+        modalOverlay.style.display = 'none';
+        
+        // Add click event to all confirm buttons
+        confirmButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            // Get course code and name
+            currentCourse = this.getAttribute('data-course');
+            const courseItem = this.closest('.course-item');
+            const courseName = courseItem.querySelector('.course-name').textContent;
+            
+            // Update modal content
+            modalCourseName.textContent = currentCourse + ' ' + courseName;
+            
+            // Show modal
+            modalOverlay.classList.remove('hidden');
+            modalOverlay.style.display = 'flex';
+          });
+        });
+        
+        // Close modal function
+        function closeModal() {
+          modalOverlay.classList.add('hidden');
+          modalOverlay.style.display = 'none';
+          currentCourse = null;
+        }
+        
+        // Close modal when clicking close button or cancel
+        closeModalBtn.addEventListener('click', closeModal);
+        cancelBtn.addEventListener('click', closeModal);
+        
+        // Close modal when clicking outside
+        modalOverlay.addEventListener('click', function(e) {
+          if (e.target === modalOverlay) {
+            closeModal();
+          }
+        });
+        
+        // Confirm attendance
+        confirmBtn.addEventListener('click', function() {
+          if (!currentCourse) return;
+          
+          // Find the course item
+          const courseItem = document.querySelector(`.course-item[data-course-code="${currentCourse}"]`);
+          if (!courseItem) return;
+          
+          // Hide confirm button and show confirmed status
+          const confirmBtn = courseItem.querySelector('.confirm-btn');
+          const confirmedStatus = courseItem.querySelector('.confirmed-status');
+          
+          confirmBtn.classList.add('hidden');
+          confirmedStatus.classList.remove('hidden');
+          
+          // Add confirmed class to course item
+          courseItem.classList.add('confirmed');
+          
+          // Close modal
+          closeModal();
+        });
+      });
+    </script>
+  </body>
+</html> 

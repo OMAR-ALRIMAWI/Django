@@ -1,0 +1,225 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Exam Redo - Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap"
+      data-tag="font"
+    />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <!-- Header Section -->
+      <header class="header">
+        <div class="container">
+          <div class="header-content">
+            <div class="header-logo">
+              <img src="{% static 'images/logo.svg' %}" alt="Logo">
+            </div>
+            
+            <div class="header-actions">
+              <div class="search-box">
+                <i class="fa-solid fa-search search-icon"></i>
+                <input type="text" class="search-input" placeholder="Search..." />
+              </div>
+              
+              <a href="notifications1.html" class="header-icon">
+                <i class="fa-solid fa-bell"></i>
+              </a>
+              
+              <a href="profilepage.html" class="user-profile">
+                <img src="public/external/image271065-cowr-200h.png" alt="Profile" />
+              </a>
+              
+              <a href="exam-redo.html" class="logout-btn">Logout</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      <!-- Main Content -->
+      <main class="container">
+        <div class="main-content">
+          <!-- Sidebar -->
+          <aside class="sidebar">
+            <nav>
+              <ul class="sidebar-menu">
+                <li class="sidebar-menu-item">
+                  <a href="index.html" class="sidebar-menu-link active">
+                    <i class="fa-solid fa-house"></i> Dashboard
+                  </a>
+                </li>
+                
+                <div class="sidebar-menu-title">Exam Management</div>
+                <li class="sidebar-menu-item">
+                  <a href="course-grades.html" class="sidebar-menu-link">
+                    <i class="fa-solid fa-file-alt"></i> Course Letter Grades
+                  </a>
+                </li>
+                <li class="sidebar-menu-item">
+                  <a href="attend-resit.html" class="sidebar-menu-link">
+                    <i class="fa-solid fa-check-circle"></i> Attend Resit Exam
+                  </a>
+                </li>
+                <li class="sidebar-menu-item">
+                  <a href="resit-exam-schedule.html" class="sidebar-menu-link">
+                    <i class="fa-solid fa-calendar"></i> Resit Exam Schedule
+                  </a>
+                </li>
+                
+                <div class="sidebar-menu-title">Results</div>
+                <li class="sidebar-menu-item">
+                  <a href="resit-exam-details.html" class="sidebar-menu-link">
+                    <i class="fa-solid fa-info-circle"></i> Resit Exam Details
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+          
+          <!-- Dashboard Content -->
+          <div class="dashboard-content">
+            <div class="content-header">
+              <h1 class="content-title">Resit Exam Dashboard</h1>
+              <p class="content-subtitle">Welcome, <strong>Abdullah Al Mouzah</strong>. Here are your upcoming resit exams.</p>
+            </div>
+            
+            <div class="course-cards">
+              <!-- Course Card 1 -->
+              <div class="course-card">
+                <div class="course-header">
+                  <div class="course-code">SE302/2</div>
+                  <div class="course-name">Software Project Management</div>
+                </div>
+                <div class="course-body">
+                  <div class="course-instructor">
+                    <div class="instructor-avatar">
+                      <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <div class="instructor-name">Dr. Öğr. Üyesi KRİSTİN SURPUHİ BENLİ</div>
+                  </div>
+                  
+                  <div class="course-details">
+                    <div class="detail-item">
+                      <i class="fa-solid fa-calendar-alt detail-icon"></i>
+                      <span>June 15, 2023 - 10:00 AM</span>
+                    </div>
+                    <div class="detail-item">
+                      <i class="fa-solid fa-map-marker-alt detail-icon"></i>
+                      <span>Room A-301</span>
+                    </div>
+                    <div class="detail-item">
+                      <i class="fa-solid fa-clock detail-icon"></i>
+                      <span>90 minutes</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="course-actions">
+                  <a href="resit-exam-details.html#SE302/2" class="btn btn-primary course-btn">
+                    <i class="fa-solid fa-info-circle"></i> View Details
+                  </a>
+                </div>
+              </div>
+              
+              <!-- Course Card 2 -->
+              <div class="course-card">
+                <div class="course-header">
+                  <div class="course-code">IE333/1</div>
+                  <div class="course-name">Data Science and Analytics</div>
+                </div>
+                <div class="course-body">
+                  <div class="course-instructor">
+                    <div class="instructor-avatar">
+                      <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <div class="instructor-name">Dr. Öğr. Üyesi SALIM JIBRIN DANBATTA</div>
+                  </div>
+                  
+                  <div class="course-details">
+                    <div class="detail-item">
+                      <i class="fa-solid fa-calendar-alt detail-icon"></i>
+                      <span>June 18, 2023 - 13:30 PM</span>
+                    </div>
+                    <div class="detail-item">
+                      <i class="fa-solid fa-map-marker-alt detail-icon"></i>
+                      <span>Room B-105</span>
+                    </div>
+                    <div class="detail-item">
+                      <i class="fa-solid fa-clock detail-icon"></i>
+                      <span>120 minutes</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="course-actions">
+                  <a href="resit-exam-details.html#IE333/1" class="btn btn-primary course-btn">
+                    <i class="fa-solid fa-info-circle"></i> View Details
+                  </a>
+                </div>
+              </div>
+              
+              <!-- Course Card 3 -->
+              <div class="course-card">
+                <div class="course-header">
+                  <div class="course-code">PSIR452/1</div>
+                  <div class="course-name">State Crimes and Atrocities</div>
+                </div>
+                <div class="course-body">
+                  <div class="course-instructor">
+                    <div class="instructor-avatar">
+                      <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <div class="instructor-name">Dr. Öğr. Üyesi HAMOON KHELGHAT</div>
+                  </div>
+                  
+                  <div class="course-details">
+                    <div class="detail-item">
+                      <i class="fa-solid fa-calendar-alt detail-icon"></i>
+                      <span>June 20, 2023 - 09:00 AM</span>
+                    </div>
+                    <div class="detail-item">
+                      <i class="fa-solid fa-map-marker-alt detail-icon"></i>
+                      <span>Room C-210</span>
+                    </div>
+                    <div class="detail-item">
+                      <i class="fa-solid fa-clock detail-icon"></i>
+                      <span>150 minutes</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="course-actions">
+                  <a href="resit-exam-details.html#PSIR452/1" class="btn btn-primary course-btn">
+                    <i class="fa-solid fa-info-circle"></i> View Details
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,249 @@
+.exam-redo-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+  }
+   
+  .exam-redo-exam-redo {
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(255, 255, 255, 1);
+  }
+   
+  .exam-redo-group200 {
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .exam-redo-examredo {
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+   
+  .exam-redo-beginning {
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(235, 247, 250, 1);
+  }
+   
+  .exam-redo-group1881 {
+    top: 293px;
+    left: 960px;
+    width: 133px;
+    height: 70px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .exam-redo-group1871 {
+    top: 0px;
+    left: 0px;
+    width: 133px;
+    height: 70px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .exam-redo-rectangle2 {
+    top: 0px;
+    left: 0px;
+    width: 133px;
+    height: 70px;
+    position: absolute;
+  }
+   
+  .exam-redo-rectangle2-stroke {
+    top: 0px;
+    left: 0px;
+    width: 133px;
+    height: 70px;
+    position: absolute;
+  }
+   
+  .exam-redo-rectangle3 {
+    top: 519px;
+    left: 812.3636474609375px;
+    width: 285px;
+    height: 67px;
+    position: absolute;
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+   
+  .exam-redo-rectangle5 {
+    top: 625px;
+    left: 812.3636474609375px;
+    width: 285px;
+    height: 67px;
+    position: absolute;
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+   
+  .exam-redo-text1 {
+    top: 536px;
+    left: 848.3636474609375px;
+    color: rgba(0, 0, 0, 1);
+    width: 214px;
+    height: auto;
+    position: absolute;
+    font-size: 28px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    z-index: 1;
+    pointer-events: none;
+  }
+   
+  .exam-redo-text2 {
+    top: 643px;
+    left: 834.3636474609375px;
+    color: rgba(0, 0, 0, 1);
+    width: 242px;
+    height: auto;
+    position: absolute;
+    font-size: 28px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    z-index: 1;
+    pointer-events: none;
+  }
+   
+  .exam-redo-rectangle6 {
+    top: 731px;
+    left: 812.3636474609375px;
+    width: 285px;
+    height: 67px;
+    position: absolute;
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+   
+  .exam-redo-text3 {
+    top: 749px;
+    left: 834.3636474609375px;
+    color: rgba(0, 0, 0, 1);
+    width: 242px;
+    height: auto;
+    position: absolute;
+    font-size: 28px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+    z-index: 1;
+    pointer-events: none;
+  }
+   
+  .exam-redo-group1882 {
+    top: 292px;
+    left: 808px;
+    width: 295.63623046875px;
+    height: 75px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .exam-redo-group1872 {
+    top: 0px;
+    left: 0px;
+    width: 295.63623046875px;
+    height: 75px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .exam-redo-text4 {
+    color: rgba(51, 61, 121, 1);
+    height: auto;
+    position: absolute;
+    font-size: 55px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .exam-redo-text5 {
+    top: 8px;
+    left: 168.63623046875px;
+    color: rgba(255, 255, 255, 1);
+    width: 127px;
+    height: auto;
+    position: absolute;
+    font-size: 40px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  
+  .login-button {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .login-button:hover {
+    transform: scale(1.05);
+  }
+  
+  .login-button:active {
+    transform: scale(0.98);
+  }
+  

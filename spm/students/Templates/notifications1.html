@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Exam Redo - Notifications</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap"
+      data-tag="font"
+    />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/notifications.css' %}" />
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <!-- Header Section -->
+      <header class="header">
+        <div class="container">
+          <div class="header-content">
+            <div class="header-logo">
+              <img src="{% static 'logo.svg' %}" alt="Logo" />
+            </div>
+            
+            <div class="header-actions">
+              <div class="search-box">
+                <i class="fa-solid fa-search search-icon"></i>
+                <input type="text" class="search-input" placeholder="Search..." />
+              </div>
+              
+              <a href="{% url 'students:notifications' %}" class="header-icon active">
+                <i class="fa-solid fa-bell"></i>
+              </a>
+              
+              <a href="{% url 'students:profile_page' %}" class="user-profile">
+                <img src="{% static 'images/image271065-cowr-200h.png' %}" alt="Profile" />
+              </a>
+              
+              <a href="{% url 'students:landing_page' %}" class="logout-btn">Logout</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      <!-- Main Content -->
+      <main class="container">
+        <div class="main-content">
+          <!-- Sidebar -->
+          <aside class="sidebar">
+            <nav>
+              <ul class="sidebar-menu">
+                <li class="sidebar-menu-item">
+                  <a href="{% url 'students:student_home' %}" class="sidebar-menu-link">
+                  </a>
+                </li>
+                
+                <div class="sidebar-menu-title">Exam Management</div>
+                <li class="sidebar-menu-item">
+                </li>
+                <li class="sidebar-menu-item">
+                </li>
+                <li class="sidebar-menu-item">
+                </li>
+                
+                <div class="sidebar-menu-title">Results</div>
+                <li class="sidebar-menu-item">
+                </li>
+              </ul>
+            </nav>
+          </aside>
+          
+          <!-- Notifications Content -->
+          <div class="dashboard-content">
+            <div class="content-header">
+              <h1 class="content-title">Notifications</h1>
+              <p class="content-subtitle">Stay updated with important information about your exams and results.</p>
+            </div>
+            
+            <div class="notifications-container">
+              <div class="notifications-header">
+                <div class="notifications-count">
+                </div>
+                <div class="notifications-actions">
+                </div>
+              </div>
+              
+              <div class="notifications-list">
+                <!-- Notification Item 1 -->
+                <div class="notification-item unread">
+                </div>
+                
+                <!-- Notification Item 2 -->
+                <div class="notification-item unread">
+                </div>
+                
+                <!-- Notification Item 3 -->
+                <div class="notification-item unread">
+                </div>
+                
+                <!-- Notification Item 4 -->
+                <div class="notification-item unread">
+                </div>
+                
+                <!-- Notification Item 5 (Read) -->
+                <div class="notification-item">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

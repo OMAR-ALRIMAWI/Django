@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Resit Exam Schedule</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <main class="container">
+        <!-- Content goes here -->
+      </main>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        examDates.forEach(date => {
+          date.addEventListener('click', function() {
+            const dateNum = parseInt(this.textContent);
+            timelineItems.forEach(item => {
+              const itemDateNum = parseInt(item.querySelector('.date-num').textContent);
+              if (itemDateNum === dateNum) {
+                item.classList.add('current');
+                item.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              }
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

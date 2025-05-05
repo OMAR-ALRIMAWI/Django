@@ -1,0 +1,168 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Exam Redo - Resit Exam Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/exam-details.css' %}" />
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <!-- Header Section -->
+      <header class="header">
+        <div class="container">
+          <div class="header-content">
+            <div class="header-logo">
+              <img src="{% static 'logo.svg' %}" alt="Logo" />
+            </div>
+            
+            <div class="header-actions">
+              <div class="search-box">
+                <i class="fa-solid fa-search search-icon"></i>
+                <input type="text" class="search-input" placeholder="Search..." />
+              </div>
+              
+              <a href="{% url 'students:notifications' %}" class="header-icon">
+                <i class="fa-solid fa-bell"></i>
+              </a>
+              
+              <a href="{% url 'students:profile_page' %}" class="user-profile">
+                <img src="{% static 'images/image271065-cowr-200h.png' %}" alt="User profile photo" />
+              </a>
+              
+              <a href="{% url 'students:landing_page' %}" class="logout-btn">Logout</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      <!-- Main Content -->
+      <main class="container">
+        <div class="main-content">
+          <!-- Sidebar -->
+          <aside class="sidebar">
+            <nav>
+              <ul class="sidebar-menu">
+                <li class="sidebar-menu-item">
+                  <a href="{% url 'students:student_home' %}" class="sidebar-menu-link">
+                    <i class="fa-solid fa-house"></i> Dashboard
+                  </a>
+                </li>
+                
+                <div class="sidebar-menu-title">Exam Management</div>
+                <li class="sidebar-menu-item">
+                  <a href="{% url 'students:display_course_grades' %}" class="sidebar-menu-link">
+                    <i class="fa-solid fa-file-alt"></i> Course Letter Grades
+                  </a>
+                </li>
+                <li class="sidebar-menu-item">
+                  <a href="{% url 'students:decide_resit_exam' %}" class="sidebar-menu-link">
+                    <i class="fa-solid fa-check-circle"></i> Attend Resit Exam
+                  </a>
+                </li>
+                <li class="sidebar-menu-item">
+                  <a href="{% url 'students:display_resit_exam_time' %}" class="sidebar-menu-link">
+                    <i class="fa-solid fa-calendar"></i> Resit Exam Schedule
+                  </a>
+                </li>
+                
+                <div class="sidebar-menu-title">Results</div>
+                <li class="sidebar-menu-item">
+                  <a href="{% url 'students:display_resit_exam_details' %}" class="sidebar-menu-link active">
+                    <i class="fa-solid fa-info-circle"></i> Resit Exam Details
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+          
+          <!-- Exam Details Content -->
+          <div class="dashboard-content">
+            <div class="content-header">
+              <h1 class="content-title">Resit Exam Details</h1>
+              <p class="content-subtitle">View important announcements and instructions for your confirmed resit exams.</p>
+            </div>
+            
+            <div class="details-container">
+              <!-- Course Tabs -->
+              <div class="course-tabs">
+                <button class="tab-btn active" data-course="SE302/2">
+                  <div class="tab-code">SE302/2</div>
+                  <div class="tab-name">Software Project Management</div>
+                </button>
+                <button class="tab-btn" data-course="IE333/1">
+                  <div class="tab-code">IE333/1</div>
+                  <div class="tab-name">Data Science and Analytics</div>
+                </button>
+                <button class="tab-btn" data-course="PSIR452/1">
+                  <div class="tab-code">PSIR452/1</div>
+                  <div class="tab-name">State Crimes and Atrocities</div>
+                </button>
+                <button class="tab-btn" data-course="MATH202/1">
+                  <div class="tab-code">MATH202/1</div>
+                  <div class="tab-name">Numerical Analysis</div>
+                  <span class="badge">Optional</span>
+                </button>
+              </div>
+              
+              <!-- Course Content Area -->
+              <div class="course-content-area">
+                <!-- SE302/2 Content (default active) -->
+                <div class="course-content active" id="SE302/2">
+                  <div class="course-header">
+                  </div>
+                  
+                  <!-- Announcement Cards -->
+                  <div class="announcement-cards">
+                  </div>
+                </div>
+                
+                <!-- IE333/1 Content -->
+                <div class="course-content" id="IE333/1">
+                  <div class="course-header">
+                  </div>
+                  
+                  <!-- Announcement Cards -->
+                  <div class="announcement-cards">
+                  </div>
+                </div>
+                
+                <!-- PSIR452/1 Content -->
+                <div class="course-content" id="PSIR452/1">
+                  <div class="course-header">
+                  </div>
+                  
+                  <!-- Announcement Cards -->
+                  <div class="announcement-cards">
+                  </div>
+                </div>
+                
+                <!-- MATH202/1 Content -->
+                <div class="course-content" id="MATH202/1">
+                  <div class="course-header">
+                  </div>
+                  
+                  <!-- Announcement Cards -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

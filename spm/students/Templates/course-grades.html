@@ -1,0 +1,286 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Exam Redo - Course Letter Grades</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap"
+      data-tag="font"
+    />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/course-grades.css" />
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <!-- Header Section -->
+      <header class="header">
+        <div class="container">
+          <div class="header-content">
+            <div class="header-logo">
+              <img src="{% static 'logo.svg' %}" alt="Logo" />
+            </div>
+            
+            <div class="header-actions">
+              <div class="search-box">
+                <i class="fa-solid fa-search search-icon"></i>
+                <input type="text" class="search-input" placeholder="Search..." />
+              </div>
+              
+              <a href="notifications1.html" class="header-icon">
+                <i class="fa-solid fa-bell"></i>
+              </a>
+              
+              <a href="profilepage.html" class="user-profile">
+                <img src="public/external/image271065-cowr-200h.png" alt="User profile" />
+              </a>
+              
+              <a href="exam-redo.html" class="logout-btn">Logout</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      <!-- Main Content -->
+      <main class="container">
+        <div class="main-content">
+          <!-- Sidebar -->
+          <aside class="sidebar">
+            <nav>
+              <ul class="sidebar-menu">
+                <li class="sidebar-menu-item">
+                  <a href="index.html" class="sidebar-menu-link">
+                    <i class="fa-solid fa-house"></i> Dashboard
+                  </a>
+                </li>
+                
+                <div class="sidebar-menu-title">Exam Management</div>
+                <li class="sidebar-menu-item">
+                  <a href="course-grades.html" class="sidebar-menu-link active">
+                    <i class="fa-solid fa-file-alt"></i> Course Letter Grades
+                  </a>
+                </li>
+                <li class="sidebar-menu-item">
+                  <a href="attend-resit.html" class="sidebar-menu-link">
+                    <i class="fa-solid fa-check-circle"></i> Attend Resit Exam
+                  </a>
+                </li>
+                <li class="sidebar-menu-item">
+                  <a href="resit-exam-schedule.html" class="sidebar-menu-link">
+                    <i class="fa-solid fa-calendar"></i> Resit Exam Schedule
+                  </a>
+                </li>
+                
+                <div class="sidebar-menu-title">Results</div>
+                <li class="sidebar-menu-item">
+                  <a href="resit-exam-details.html" class="sidebar-menu-link">
+                    <i class="fa-solid fa-info-circle"></i> Resit Exam Details
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+          
+          <!-- Course Grades Content -->
+          <div class="dashboard-content">
+            <div class="content-header">
+              <h1 class="content-title">Course Letter Grades</h1>
+              <p class="content-subtitle">View your final letter grades for each course and check which ones are eligible for resit exams.</p>
+            </div>
+            
+            <div class="grades-container">
+              <div class="grades-card">
+                <div class="grades-header">
+                  <div class="semester-selector">
+                    <label for="semester">Select Semester:</label>
+                    <select id="semester" class="semester-dropdown">
+                      <option value="fall2023">Fall 2023-2024</option>
+                      <option value="spring2023">Spring 2022-2023</option>
+                      <option value="fall2022">Fall 2022-2023</option>
+                    </select>
+                  </div>
+                  <div class="grades-actions">
+                    <button class="btn btn-secondary" onclick="exportGrades()">
+                      <i class="fa-solid fa-download"></i> Export
+                    </button>
+                    <button class="btn btn-primary" onclick="printGrades()">
+                      <i class="fa-solid fa-print"></i> Print
+                    </button>
+                  </div>
+                </div>
+                
+                <div class="grades-table-container">
+                  <table class="grades-table">
+                    <thead>
+                      <tr>
+                        <th>Course Code</th>
+                        <th>Course Name</th>
+                        <th>Grade</th>
+                        <th>Resit Status</th>
+                        <th>Result</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="pass-conditional">
+                        <td>SE302/2</td>
+                        <td>Software Project Management</td>
+                        <td class="grade">DC</td>
+                        <td class="resit">
+                          <span class="status eligible">Eligible</span>
+                        </td>
+                        <td class="result">Conditional Pass</td>
+                      </tr>
+                      <tr class="pass-conditional">
+                        <td>IE333/1</td>
+                        <td>Data Science and Analytics</td>
+                        <td class="grade">DD</td>
+                        <td class="resit">
+                          <span class="status eligible">Eligible</span>
+                        </td>
+                        <td class="result">Conditional Pass</td>
+                      </tr>
+                      <tr class="fail">
+                        <td>PSIR452/1</td>
+                        <td>State Crimes and Atrocities</td>
+                        <td class="grade">FF</td>
+                        <td class="resit">
+                          <span class="status eligible">Eligible</span>
+                        </td>
+                        <td class="result">Fail</td>
+                      </tr>
+                      <tr class="pass">
+                        <td>SE304/1</td>
+                        <td>Software Testing and Quality Assurance</td>
+                        <td class="grade">BB</td>
+                        <td class="resit">
+                          <span class="status not-eligible">Not Eligible</span>
+                        </td>
+                        <td class="result">Pass</td>
+                      </tr>
+                      <tr class="pass">
+                        <td>SE308/1</td>
+                        <td>Mobile Application Development</td>
+                        <td class="grade">AB</td>
+                        <td class="resit">
+                          <span class="status not-eligible">Not Eligible</span>
+                        </td>
+                        <td class="result">Pass</td>
+                      </tr>
+                      <tr class="pass">
+                        <td>MATH202/1</td>
+                        <td>Numerical Analysis</td>
+                        <td class="grade">CD</td>
+                        <td class="resit">
+                          <span class="status not-eligible">Not Eligible</span>
+                        </td>
+                        <td class="result">Pass</td>
+                      </tr>
+                      <tr class="pass">
+                        <td>ENGL104/2</td>
+                        <td>Academic English II</td>
+                        <td class="grade">BA</td>
+                        <td class="resit">
+                          <span class="status not-eligible">Not Eligible</span>
+                        </td>
+                        <td class="result">Pass</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                
+                <div class="grades-summary">
+                  <div class="summary-item">
+                    <div class="summary-label">Semester GPA</div>
+                    <div class="summary-value">2.43</div>
+                  </div>
+                  <div class="summary-item">
+                    <div class="summary-label">Cumulative GPA</div>
+                    <div class="summary-value">2.87</div>
+                  </div>
+                  <div class="summary-item">
+                    <div class="summary-label">Passed Courses</div>
+                    <div class="summary-value">6</div>
+                  </div>
+                  <div class="summary-item">
+                    <div class="summary-label">Failed Courses</div>
+                    <div class="summary-value">1</div>
+                  </div>
+                </div>
+                
+                <div class="grades-legend">
+                  <div class="legend-item">
+                    <div class="legend-color pass"></div>
+                    <div class="legend-text">Pass</div>
+                  </div>
+                  <div class="legend-item">
+                    <div class="legend-color pass-conditional"></div>
+                    <div class="legend-text">Conditional Pass</div>
+                  </div>
+                  <div class="legend-item">
+                    <div class="legend-color fail"></div>
+                    <div class="legend-text">Fail</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    
+    <script>
+      // Function to handle exporting grades
+      function exportGrades() {
+        // In a real application, this would generate and download a CSV/Excel file
+        alert('Exporting grades as CSV...');
+        
+        // Example of what would happen in a full implementation
+        // const data = generateCSVData();
+        // const blob = new Blob([data], { type: 'text/csv' });
+        // const url = window.URL.createObjectURL(blob);
+        // const a = document.createElement('a');
+        // a.href = url;
+        // a.download = `grades_${document.getElementById('semester').value}.csv`;
+        // document.body.appendChild(a);
+        // a.click();
+        // window.URL.revokeObjectURL(url);
+        // document.body.removeChild(a);
+      }
+      
+      // Function to handle printing grades
+      function printGrades() {
+        // Simple print functionality
+        window.print();
+      }
+      
+      // Update table when semester changes
+      document.getElementById('semester').addEventListener('change', function() {
+        // In a real application, this would fetch and display data for the selected semester
+        const selectedSemester = this.value;
+        console.log(`Loading grades for ${selectedSemester}...`);
+        // Example: fetchGradesForSemester(selectedSemester);
+      });
+    </script>
+  </body>
+</html> 

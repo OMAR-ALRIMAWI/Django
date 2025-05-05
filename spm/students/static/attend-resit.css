@@ -1,0 +1,342 @@
+/*
+* Exam Redo Hub - Attend Resit Exam Styles
+* Specific styles for the attend resit exam page
+*/
+
+/* Attend container */
+.attend-container {
+  width: 100%;
+}
+
+/* Info alert */
+.info-alert {
+  background-color: rgba(47, 137, 220, 0.1);
+  border-left: 4px solid var(--secondary-color);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+  display: flex;
+  align-items: flex-start;
+}
+
+.info-alert i {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  margin-right: var(--spacing-md);
+  margin-top: var(--spacing-xs);
+}
+
+.alert-content {
+  flex: 1;
+}
+
+.alert-title {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  margin-bottom: var(--spacing-xs);
+}
+
+.alert-text {
+  color: var(--text-color);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Attend card */
+.attend-card {
+  background-color: var(--light-color);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  margin-bottom: var(--spacing-lg);
+}
+
+.attend-header {
+  background-color: rgba(235, 247, 250, 0.5);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.attend-title {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.header-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.deadline {
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+.remaining-time {
+  background-color: rgba(244, 67, 54, 0.1);
+  color: var(--error-color);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-md);
+}
+
+/* Courses list */
+.courses-list {
+  padding: var(--spacing-lg);
+}
+
+.course-item {
+  background-color: var(--light-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all var(--transition-fast);
+}
+
+.course-item:last-child {
+  margin-bottom: 0;
+}
+
+.course-item:hover {
+  box-shadow: var(--shadow-sm);
+}
+
+.course-item.confirmed {
+  background-color: rgba(76, 175, 80, 0.05);
+  border-color: var(--success-color);
+}
+
+.course-item.optional {
+  background-color: rgba(255, 152, 0, 0.05);
+}
+
+.course-info {
+  flex: 1;
+}
+
+.course-code-name {
+  margin-bottom: var(--spacing-sm);
+  position: relative;
+}
+
+.course-code {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-right: var(--spacing-sm);
+}
+
+.course-name {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.optional-badge {
+  display: inline-block;
+  background-color: var(--warning-color);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.1rem 0.5rem;
+  border-radius: var(--border-radius-sm);
+  margin-left: var(--spacing-sm);
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.course-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md) var(--spacing-lg);
+}
+
+.detail-label {
+  font-size: 0.8rem;
+  color: var(--text-color);
+  opacity: 0.7;
+  margin-right: var(--spacing-xs);
+}
+
+.detail-value {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.grade-a, .grade-b {
+  color: var(--success-color);
+}
+
+.grade-c {
+  color: var(--warning-color);
+}
+
+.grade-d, .grade-f {
+  color: var(--error-color);
+}
+
+.course-action {
+  display: flex;
+  align-items: center;
+  margin-left: var(--spacing-lg);
+}
+
+.confirm-btn {
+  white-space: nowrap;
+}
+
+.confirmed-status {
+  display: flex;
+  align-items: center;
+  color: var(--success-color);
+  font-weight: 600;
+}
+
+.confirmed-status i {
+  margin-right: var(--spacing-xs);
+  font-size: 1.2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  width: 90%;
+  max-width: 500px;
+  background-color: var(--light-color);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+.modal-header {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding: var(--spacing-md) var(--spacing-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  color: var(--light-color);
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity var(--transition-fast);
+}
+
+.modal-close:hover {
+  opacity: 0.8;
+}
+
+.modal-body {
+  padding: var(--spacing-lg);
+}
+
+.modal-warning {
+  color: var(--error-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: var(--spacing-md);
+}
+
+.modal-footer {
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--spacing-md);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .attend-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .header-info {
+    margin-top: var(--spacing-sm);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+  }
+  
+  .course-item {
+    flex-direction: column;
+  }
+  
+  .course-info {
+    width: 100%;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .course-details {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+  
+  .course-action {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .confirm-btn,
+  .confirmed-status {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-alert {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .info-alert i {
+    margin-right: 0;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .modal {
+    width: 95%;
+  }
+} 

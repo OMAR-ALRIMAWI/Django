@@ -1,13 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Profile Page</title>
-</head>
-<body>
-    <h1>Profile Page</h1>
-    <p><strong>First Name:</strong> {{ user.first_name }}</p> <!-- Automatically populated -->
-    <p><strong>Last Name:</strong> {{ user.last_name }}</p>   <!-- Automatically populated -->
-    <p><strong>Email:</strong> {{ user.email }}</p>
-</body>
+<html lang="english">
+  <head>
+    <title>Exam Redo - User Profile</title>
+    <link rel="stylesheet" href="{% static 'css/profilepage.css' %}">
+  </head>
+  <body>
+    <div class="profilepage-container">
+      <div class="profilepage-profilepage">
+        <img src="{% static 'images/logo.svg' %}" alt="Logo">
+        <!-- Content goes here -->
+      </div>
+    </div>
+  </body>
 </html>

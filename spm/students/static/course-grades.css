@@ -1,0 +1,290 @@
+/*
+* Exam Redo Hub - Course Grades Styles
+* Specific styles for the course letter grades page
+*/
+
+/* Grades container */
+.grades-container {
+  width: 100%;
+}
+
+.grades-card {
+  background-color: var(--light-color);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Grades header */
+.grades-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.semester-selector {
+  display: flex;
+  align-items: center;
+}
+
+.semester-selector label {
+  margin-right: var(--spacing-sm);
+  font-weight: 500;
+}
+
+.semester-dropdown {
+  padding: var(--spacing-xs) var(--spacing-md);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  font-size: 0.9rem;
+  background-color: var(--light-color);
+  cursor: pointer;
+  min-width: 200px;
+}
+
+.semester-dropdown:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 2px rgba(47, 137, 220, 0.2);
+}
+
+.grades-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.grades-actions .btn {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-md);
+  font-size: 0.9rem;
+}
+
+/* Grades table */
+.grades-table-container {
+  overflow-x: auto;
+  padding: var(--spacing-lg);
+}
+
+.grades-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.grades-table th,
+.grades-table td {
+  padding: var(--spacing-md);
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.grades-table th {
+  font-weight: 600;
+  color: var(--primary-color);
+  background-color: rgba(235, 247, 250, 0.5);
+  white-space: nowrap;
+}
+
+.grades-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Row status colors */
+.grades-table tr.pass {
+  background-color: rgba(76, 175, 80, 0.05);
+}
+
+.grades-table tr.pass-conditional {
+  background-color: rgba(255, 152, 0, 0.05);
+}
+
+.grades-table tr.fail {
+  background-color: rgba(244, 67, 54, 0.05);
+}
+
+/* Grade, Resit, and Result columns */
+.grade {
+  font-weight: 700;
+  text-align: center;
+}
+
+.resit {
+  text-align: center;
+}
+
+.result {
+  font-weight: 600;
+}
+
+tr.pass .result {
+  color: var(--success-color);
+}
+
+tr.pass-conditional .result {
+  color: var(--warning-color);
+}
+
+tr.fail .result {
+  color: var(--error-color);
+}
+
+/* Status badges */
+.status {
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-md);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.status.eligible {
+  background-color: rgba(76, 175, 80, 0.15);
+  color: var(--success-color);
+}
+
+.status.not-eligible {
+  background-color: rgba(158, 158, 158, 0.15);
+  color: #757575;
+}
+
+.status.optional {
+  background-color: rgba(255, 152, 0, 0.15);
+  color: var(--warning-color);
+}
+
+/* Grades summary */
+.grades-summary {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-lg);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  background-color: rgba(235, 247, 250, 0.3);
+}
+
+.summary-item {
+  text-align: center;
+}
+
+.summary-label {
+  font-size: 0.85rem;
+  color: var(--text-color);
+  margin-bottom: var(--spacing-xs);
+  font-weight: 500;
+}
+
+.summary-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+/* Grades legend */
+.grades-legend {
+  display: flex;
+  padding: var(--spacing-md) var(--spacing-lg);
+  gap: var(--spacing-lg);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+}
+
+.legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: var(--border-radius-sm);
+  margin-right: var(--spacing-xs);
+}
+
+.legend-color.pass {
+  background-color: rgba(76, 175, 80, 0.2);
+  border: 1px solid var(--success-color);
+}
+
+.legend-color.pass-conditional {
+  background-color: rgba(255, 152, 0, 0.2);
+  border: 1px solid var(--warning-color);
+}
+
+.legend-color.fail {
+  background-color: rgba(244, 67, 54, 0.2);
+  border: 1px solid var(--error-color);
+}
+
+.legend-text {
+  font-size: 0.85rem;
+  color: var(--text-color);
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .grades-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .grades-actions {
+    margin-top: var(--spacing-md);
+  }
+  
+  .summary-value {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .grades-table th,
+  .grades-table td {
+    padding: var(--spacing-sm);
+    font-size: 0.85rem;
+  }
+  
+  .grades-summary {
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+  }
+  
+  .summary-item {
+    flex: 1 0 40%;
+  }
+  
+  .grades-legend {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .semester-selector {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .semester-dropdown {
+    width: 100%;
+    margin-top: var(--spacing-xs);
+  }
+  
+  .grades-actions {
+    width: 100%;
+  }
+  
+  .grades-actions .btn {
+    flex: 1;
+  }
+  
+  .summary-item {
+    flex: 1 0 100%;
+    margin-bottom: var(--spacing-md);
+  }
+} 

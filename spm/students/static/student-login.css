@@ -1,0 +1,232 @@
+.student-login-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(235, 247, 250, 1);
+}
+
+.student-login-student-login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.student-login-content {
+  width: 100vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.student-login-rectangle6 {
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+/* Logo styling */
+.logo-container {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.student-login-group190 {
+  display: flex;
+  align-items: center;
+}
+
+.student-login-group189 {
+  display: flex;
+  position: relative;
+}
+
+.student-login-group1871 {
+  width: 99px;
+  height: 70px;
+  position: relative;
+}
+
+.student-login-rectangle2 {
+  top: 0;
+  left: 0;
+  width: 99px;
+  height: 70px;
+  position: absolute;
+}
+
+.student-login-rectangle2-stroke {
+  top: 0;
+  left: 0;
+  width: 99px;
+  height: 70px;
+  position: absolute;
+}
+
+.student-login-group188 {
+  margin-left: 10px;
+}
+
+.student-login-group1872 {
+  display: flex;
+  align-items: center;
+}
+
+.student-login-text6 {
+  color: rgba(51, 61, 121, 1);
+  font-size: 33px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+
+.student-login-text7 {
+  color: rgba(47, 137, 220, 1);
+  font-size: 36px;
+  font-style: Medium;
+  text-align: left;
+  font-family: STIX Two Text;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+/* Login form styling */
+.login-form-container {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 400px;
+  z-index: 10;
+}
+
+.login-form-box {
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+  color: rgba(51, 61, 121, 1);
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-input {
+  width: 100%;
+  height: 50px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: rgba(47, 137, 220, 1);
+  box-shadow: 0 0 0 2px rgba(47, 137, 220, 0.2);
+}
+
+.form-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.login-button {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(51, 61, 121, 1);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+  background-color: rgba(47, 137, 220, 1);
+  transform: translateY(-2px);
+}
+
+.login-button:active {
+  transform: translateY(0);
+}
+
+.forgot-password {
+  margin-top: 15px;
+  color: rgba(47, 137, 220, 1);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+  color: rgba(51, 61, 121, 1);
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+  .student-login-rectangle6 {
+    width: 40%;
+  }
+
+  .login-form-container {
+    right: 30%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .student-login-rectangle6 {
+    display: none;
+  }
+
+  .login-form-container {
+    position: relative;
+    top: 0;
+    right: 0;
+    transform: none;
+    margin-top: 150px;
+  }
+}

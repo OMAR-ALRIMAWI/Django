@@ -1,0 +1,1235 @@
+.notifications1-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+  }
+   
+  .notifications1-notifications1 {
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(235, 247, 250, 1);
+  }
+   
+  .notifications1-online {
+    top: 1168.2760009765625px;
+    left: 1597.32080078125px;
+    width: 51.82373046875px;
+    height: 15.872037887573242px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-list4 {
+    top: 0px;
+    left: 0px;
+    width: 51.82373046875px;
+    height: 15.872037887573242px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-group135 {
+    top: 0px;
+    left: 0px;
+    width: 51.82373046875px;
+    height: 15.872037887573242px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-ellipse91 {
+    top: 10.587522506713867px;
+    left: 0px;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    border-color: rgba(255, 255, 255, 1);
+    border-style: solid;
+    border-width: 1px;
+  }
+   
+  .notifications1-text10 {
+    left: 15.82373046875px;
+    color: rgba(73, 0, 87, 1);
+    width: 36px;
+    height: auto;
+    opacity: 0.60;
+    position: absolute;
+    font-size: 12px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Nunito;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .notifications1-rectangle10 {
+    top: 0px;
+    left: 0.000293731689453125px;
+    width: 1920px;
+    height: 112px;
+    position: absolute;
+  }
+   
+  .notifications1-group190 {
+    top: 23px;
+    left: 106px;
+    width: 293px;
+    height: 69px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-group189 {
+    top: 0.9718309640884399px;
+    left: 154.3203125px;
+    width: 138.67971801757812px;
+    height: 68.02816772460938px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-group1871 {
+    top: 0px;
+    left: 0px;
+    width: 138.67971801757812px;
+    height: 68.02816772460938px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-rectangle2 {
+    top: 0px;
+    left: 0px;
+    width: 139px;
+    height: 68px;
+    position: absolute;
+  }
+   
+  .notifications1-rectangle2-stroke {
+    top: 0px;
+    left: 0px;
+    width: 139px;
+    height: 68px;
+    position: absolute;
+  }
+   
+  .notifications1-group188 {
+    top: 0px;
+    left: 0px;
+    width: 282.5729675292969px;
+    height: 65.11267852783203px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-group1872 {
+    top: 0px;
+    left: 0px;
+    width: 282.5729675292969px;
+    height: 65.11267852783203px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-text11 {
+    color: rgba(51, 61, 121, 1);
+    width: 148px;
+    height: auto;
+    position: absolute;
+    font-size: 55px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .notifications1-text12 {
+    top: 10.690140724182129px;
+    left: 164.747314453125px;
+    color: rgba(255, 255, 255, 1);
+    width: 118px;
+    height: auto;
+    position: absolute;
+    font-size: 45px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .notifications1-line1 {
+    top: 112px;
+    left: 517.0003051757812px;
+    width: 115px;
+    height: 1px;
+    position: absolute;
+  }
+   
+  .notifications1-rectangle23 {
+    top: 154px;
+    left: 64px;
+    width: 465px;
+    height: 889px;
+    position: absolute;
+    border-radius: 54px;
+  }
+   
+  .notifications1-text13 {
+    top: 540px;
+    left: 101px;
+    color: rgba(0, 0, 0, 1);
+    width: 263px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .notifications1-text14 {
+    top: 634px;
+    left: 101px;
+    color: rgba(0, 0, 0, 1);
+    width: 268px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .notifications1-line4 {
+    top: 973px;
+    left: 117px;
+    width: 356px;
+    height: 1px;
+    position: absolute;
+  }
+   
+  .notifications1-text15 {
+    top: 281px;
+    left: 101px;
+    color: rgba(0, 0, 0, 1);
+    width: 304px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .notifications1-text16 {
+    top: 361px;
+    left: 101px;
+    color: rgba(0, 0, 0, 1);
+    width: 304px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .notifications1-text17 {
+    top: 451px;
+    left: 101px;
+    color: rgba(0, 0, 0, 1);
+    width: 256px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .notifications1-text18 {
+    top: 204px;
+    left: 104px;
+    color: rgba(0, 0, 0, 1);
+    width: 125px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .notifications1-frameiconmenu {
+    top: 390.45855712890625px;
+    left: 2296.11376953125px;
+    width: 113.88566589355469px;
+    height: 67.56399536132812px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-bell1 {
+    top: 29px;
+    left: 560.0003051757812px;
+    width: 64px;
+    height: 54px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+   
+  .notifications1-rectangle28 {
+    top: 154px;
+    left: 560px;
+    width: 1308px;
+    height: 889px;
+    position: absolute;
+    border-radius: 54px;
+  }
+   
+  .notifications1-rectangle29 {
+    top: 410px;
+    left: 1482px;
+    width: 160px;
+    height: 63px;
+    position: absolute;
+    border-radius: 54px;
+  }
+   
+  .notifications1-text19 {
+    top: 424px;
+    left: 1519px;
+    color: rgba(0, 0, 0, 1);
+    width: 85px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .notifications1-rectangle22 {
+    top: 407px;
+    left: 1654px;
+    width: 176px;
+    height: 66px;
+    position: absolute;
+    border-radius: 54px;
+  }
+   
+  .notifications1-text20 {
+    top: 415px;
+    left: 1669px;
+    color: rgba(255, 255, 255, 1);
+    width: 161px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .notifications1-text21 {
+    top: 309px;
+    left: 1077px;
+    color: rgba(51, 61, 121, 1);
+    width: 119px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .notifications1-text22 {
+    top: 309px;
+    left: 635px;
+    color: rgba(51, 61, 121, 1);
+    width: 119px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .notifications1-text23 {
+    top: 776px;
+    left: 635px;
+    color: rgba(51, 61, 121, 1);
+    width: 161px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .notifications1-line8 {
+    top: 695px;
+    left: 611px;
+    width: 505px;
+    height: 1px;
+    position: absolute;
+  }
+   
+  .notifications1-line9 {
+    top: 882.5px;
+    left: 610.9876098632812px;
+    width: 505px;
+    height: 1px;
+    position: absolute;
+  }
+   
+  .notifications1-text24 {
+    top: 837px;
+    left: 635px;
+    color: rgba(51, 61, 121, 1);
+    width: 207px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .notifications1-line7 {
+    top: 517.4970092773438px;
+    left: 610.99951171875px;
+    width: 505px;
+    height: 1px;
+    position: absolute;
+  }
+   
+  .notifications1-text25 {
+    top: 472px;
+    left: 635px;
+    color: rgba(51, 61, 121, 1);
+    width: 133px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .notifications1-text26 {
+    top: 659px;
+    left: 635px;
+    color: rgba(51, 61, 121, 1);
+    width: 408px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .notifications1-text30 {
+    top: 413px;
+    left: 635px;
+    color: rgba(51, 61, 121, 1);
+    width: 119px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .notifications1-text31 {
+    top: 599px;
+    left: 635px;
+    color: rgba(51, 61, 121, 1);
+    width: 161px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .notifications1-text32 {
+    top: 243px;
+    left: 1077px;
+    color: rgba(51, 61, 121, 1);
+    width: 119px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .notifications1-text33 {
+    top: 244px;
+    left: 635px;
+    color: rgba(51, 61, 121, 1);
+    width: 119px;
+    height: auto;
+    position: absolute;
+    font-size: 22px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .notifications1-group381 {
+    top: 231px;
+    left: 1507px;
+    width: 109px;
+    height: 114px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-image271 {
+    top: 0px;
+    left: 0px;
+    width: 109px;
+    height: 114px;
+    position: absolute;
+    border-radius: 140px;
+  }
+   
+  .notifications1-line5 {
+    top: 345px;
+    left: 611px;
+    width: 356px;
+    height: 1px;
+    position: absolute;
+  }
+   
+  .notifications1-line6 {
+    top: 345px;
+    left: 1059px;
+    width: 352px;
+    height: 1px;
+    position: absolute;
+  }
+   
+  .notifications1-vector {
+    top: 419px;
+    left: 611px;
+    width: 17px;
+    height: 16px;
+    position: absolute;
+  }
+   
+  .notifications1-line10 {
+    top: 467.0003662109375px;
+    left: 1190.204345703125px;
+    width: 243.85108947753906px;
+    height: 53.62560272216797px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-line21 {
+    top: 0px;
+    left: 0px;
+    width: 243px;
+    height: 1px;
+    opacity: 0.10;
+    position: absolute;
+  }
+   
+  .notifications1-line3 {
+    top: 53.625648498535156px;
+    left: 1.051025390625px;
+    width: 243px;
+    height: 1px;
+    opacity: 0.10;
+    position: absolute;
+  }
+   
+  .notifications1-location {
+    top: 548.8133544921875px;
+    left: 1195.133056640625px;
+    width: 0px;
+    height: 0px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-message1 {
+    top: 606px;
+    left: 611px;
+    width: 16.81731605529785px;
+    height: 14.62515926361084px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-message2 {
+    top: 0px;
+    left: 0px;
+    width: 17px;
+    height: 15px;
+    position: absolute;
+  }
+   
+  .notifications1-line11 {
+    top: 643.477294921875px;
+    left: 1190.204345703125px;
+    width: 242.8000030517578px;
+    height: 0.00002019466228375677px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-line22 {
+    top: 0px;
+    left: 0px;
+    width: 243px;
+    height: 1px;
+    opacity: 0.10;
+    position: absolute;
+  }
+   
+  .notifications1-call1 {
+    top: 782px;
+    left: 611px;
+    width: 16.81731605529785px;
+    height: 15.600170135498047px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-call2 {
+    top: 0px;
+    left: 0px;
+    width: 17px;
+    height: 16px;
+    position: absolute;
+  }
+   
+  .notifications1-group43 {
+    top: 13px;
+    left: 1785px;
+    width: 99px;
+    height: 93px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-group421 {
+    top: 0px;
+    left: 0px;
+    width: 99px;
+    height: 93px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-group411 {
+    top: 0px;
+    left: 0px;
+    width: 99px;
+    height: 93px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background-color: rgba(48, 61, 126, 1);
+  }
+   
+  .notifications1-group40 {
+    top: 16px;
+    left: 619px;
+    width: 1261px;
+    height: 87px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-group35 {
+    top: 18px;
+    left: 0px;
+    width: 648px;
+    height: 46px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-group28 {
+    top: 0px;
+    left: 0px;
+    width: 648px;
+    height: 46px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-search {
+    gap: 8px;
+    top: 0px;
+    left: 0px;
+    width: 648px;
+    height: 46px;
+    display: flex;
+    padding: 12px 16px;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
+    align-items: center;
+    flex-shrink: 0;
+    border-color: rgba(48, 61, 126, 1);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 9999px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+   
+  .notifications1-text34 {
+    color: rgba(30, 30, 30, 1);
+    height: auto;
+    flex-grow: 1;
+    text-align: left;
+    line-height: 100%;
+  }
+   
+  .notifications1x {
+    width: 16px;
+    height: 16px;
+  }
+   
+  .notifications1-bell2 {
+    top: 18px;
+    left: 705px;
+    width: 64px;
+    height: 54px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+   
+  .notifications1-group382 {
+    top: 0px;
+    left: 1171px;
+    width: 90px;
+    height: 87px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-image272 {
+    top: 0px;
+    left: 0px;
+    width: 90px;
+    height: 87px;
+    position: absolute;
+    border-radius: 140px;
+  }
+   
+  .notifications1-rectangle70 {
+    top: 112px;
+    left: 0px;
+    width: 1920px;
+    height: 968px;
+    position: absolute;
+  }
+   
+  .notifications1-group1861 {
+    top: 20px;
+    left: 844px;
+    width: 753px;
+    height: 719px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-group184 {
+    top: 0px;
+    left: 0px;
+    width: 753px;
+    height: 719px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-group183 {
+    top: 0px;
+    left: 0px;
+    width: 753px;
+    height: 719px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-group181 {
+    top: 0px;
+    left: 0px;
+    width: 753px;
+    height: 719px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-group34 {
+    top: 0px;
+    left: 0px;
+    width: 753px;
+    height: 719px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-group185 {
+    top: 0px;
+    left: 0px;
+    width: 753px;
+    height: 719px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-group197 {
+    top: 0px;
+    left: 0px;
+    width: 753px;
+    height: 719px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-group191 {
+    top: 0px;
+    left: 469px;
+    width: 95px;
+    height: 75px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-group198 {
+    top: 0px;
+    left: 0px;
+    width: 95px;
+    height: 75px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-group422 {
+    top: 0px;
+    left: 0px;
+    width: 95px;
+    height: 75px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-group412 {
+    top: 0px;
+    left: 0px;
+    width: 95px;
+    height: 75px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    background-color: rgba(48, 61, 126, 1);
+  }
+   
+  .notifications1-bell3 {
+    top: 10px;
+    left: 13px;
+    width: 64px;
+    height: 54px;
+    position: absolute;
+  }
+   
+  .notifications1-rectangle24 {
+    top: 93px;
+    left: 0px;
+    width: 753px;
+    height: 626px;
+    position: absolute;
+    box-sizing: content-box;
+    border-radius: 54px;
+  }
+   
+  .notifications1-text35 {
+    top: 123px;
+    left: 114px;
+    color: rgba(0, 0, 0, 1);
+    width: 595px;
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .notifications1-text40 {
+    top: 594px;
+    left: 111px;
+    color: rgba(0, 0, 0, 1);
+    width: 595px;
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .notifications1-group1801 {
+    top: 661px;
+    left: 445px;
+    width: 195px;
+    height: 27px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-text41 {
+    color: rgba(123, 113, 113, 1);
+    width: 195px;
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .notifications1-group12 {
+    top: 120px;
+    left: 33px;
+    width: 673px;
+    height: 516px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-group11 {
+    top: 460px;
+    left: 0px;
+    width: 58px;
+    height: 56px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-screenshot202412011908331 {
+    top: 0px;
+    left: 0px;
+    width: 58px;
+    height: 56px;
+    position: absolute;
+    flex-grow: 1;
+  }
+   
+  .notifications1-images1 {
+    top: 0px;
+    left: 3px;
+    width: 54px;
+    height: 56px;
+    position: absolute;
+  }
+   
+  .notifications1-group32 {
+    top: 137px;
+    left: 3px;
+    width: 670px;
+    height: 286px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-text42 {
+    top: 5px;
+    left: 75px;
+    color: rgba(0, 0, 0, 1);
+    width: 595px;
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .notifications1-text43 {
+    top: 111px;
+    left: 75px;
+    color: rgba(0, 0, 0, 1);
+    width: 595px;
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .notifications1-text44 {
+    top: 232px;
+    left: 75px;
+    color: rgba(0, 0, 0, 1);
+    width: 595px;
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+   
+  .notifications1-image {
+    top: 0px;
+    left: 0px;
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    border-radius: 54px;
+  }
+   
+  .notifications1-download {
+    top: 113px;
+    left: 0px;
+    width: 54px;
+    height: 54px;
+    position: absolute;
+  }
+   
+  .notifications1-image23 {
+    top: 226px;
+    left: 0px;
+    width: 54px;
+    height: 55px;
+    position: absolute;
+  }
+   
+  .notifications1-group1862 {
+    top: 661px;
+    left: 413px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-group1802 {
+    top: 0px;
+    left: 0px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+   
+  .notifications1-playarrowfilled {
+    top: 0px;
+    left: 24px;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+  }
+  
